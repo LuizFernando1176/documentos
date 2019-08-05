@@ -1,10 +1,6 @@
-<?php  
-include_once './util/corpo.php';
-cabeca();
-descricaoLIndex();
 
-?>
 
+<body>
 
   <div class="d-flex" id="wrapper">
 
@@ -20,7 +16,6 @@ descricaoLIndex();
         <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
       </div>
     </div>
-  </div>
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
@@ -57,58 +52,7 @@ descricaoLIndex();
       </nav>
 
       <div class="container-fluid">
-        <h1 class="mt-4">Simple Sidebar</h1>
-        <div class="menu2 bg-dark">
-    <br>
-    <ul class="nav flex-column alinhaUl">
-
-        <li class="nav-item">
-            <span data-feather="home"></span> <a  href="#">Inicio</a>
-        </li>
-        <br>
-        <li class="nav-item">
-            <span data-feather="file-text"></span><a  href="#">Cadastrar Documento</a>
-        </li>
-        <br>
-        <li class="nav-item">
-            <span data-feather="file"></span><a  href="#">Cadastrar Tipo de Documento</a>
-        </li>
-         <br>
-        <li class="nav-item">
-            <span data-feather="user-plus"></span><a href="#">Cadastrar Usuário</a>
-        </li>
-         <br>
-        <li class="nav-item">
-            <span data-feather="lock"></span><a href="#">Cadastrar Permissão</a>
-        </li>
-         <br>
-        <li class="nav-item">
-            <span data-feather="database"></span><a href="#">Listar Documentos</a>
-        </li>
-         <br>
-        <li class="nav-item">
-            <span data-feather="hard-drive"></span><a href="#">Listar Tipo Documento</a>
-        </li>
-         <br>
-        <li class="nav-item">
-            <span data-feather="user-check"></span><a href="#">Listar Usuário</a>
-        </li>
-         <br>
-        <li class="nav-item">
-            <span data-feather="cpu"></span><a href="#">Listar Log</a>
-        </li>
-         <br>
-        <li class="nav-item">
-            <span data-feather="log-out"></span><a href="#">Logout</a>
-        </li>
-         <br>
        
-    </ul>
-</div>
-
-    <div class="container">
-        <div class="container-fluid">
-
             <div class="card" style="margin: 1%;">
                 <div class="card-header text-center"><strong class="textCads">Cadastrar Documento</strong></div>
 
@@ -182,22 +126,24 @@ descricaoLIndex();
                 </form>
 
             </div>
- 
-
-        </div></div>
     </div>
     <!-- /#page-content-wrapper -->
 
   </div>
   <!-- /#wrapper -->
 
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
 
+</body>
 
-        
-  
-
-    <?php
-
-      rodape();
-    ?>
+</html>
